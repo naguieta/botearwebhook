@@ -1,9 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse
 import os
-from .env import load_dotenv
 
-load_dotenv()
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 
 app = FastAPI()
